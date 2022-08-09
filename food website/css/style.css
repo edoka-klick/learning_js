@@ -1,0 +1,270 @@
+body, html {
+    margin: 0;
+    color: #212226;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background-color: #ffff;
+    overflow: hidden; /* specifies what happens if content overflows an element box*/
+}
+
+/** Preloader **/
+
+#preloader {
+    background-color: #ffff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    visibility: hidden;
+}
+
+#status {
+    background-image: url(https://miro.medium.com/max/1400/1*CsJ05WEGfunYMLGfsT2sXA.gif);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+
+/** Home **/
+#home {
+    background: none  ;
+    height: 100%;
+}
+#home-bg-video {
+    position: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+#home-overlay {
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home-content {
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+
+#home-heading h1 span{
+    color:#f4c613;
+    font-weight: 500;
+}
+
+#home-text p{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+/** Buttons **/
+
+.btn-general {
+    font-family: "Railway", sans-serif;
+    border-radius: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 12px 46px 12px 46px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+.btn-home {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color: #f4c613;
+}
+
+/** Arrow Down **/
+
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 2;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #f4c613;
+}
+
+
+/** Content Boxes **/
+
+.content-box-lg {
+    padding: 120px 0;
+}
+
+.content-box-md {
+    padding: 100px 0; /* first: top+bottom, second:left+right */
+}
+
+/*** About ****/
+
+.vertical-heading h5{
+    color: #f4c613;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    display: inline-block; /* removes the unnecessary empty spaces, it makes this element fit as its size */
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -63px;
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.about-bottom {
+    margin-top: 5%;
+    text-align: center;
+}
+
+/*** About part 2**/
+
+.about-02{
+    background-color: #f4f4f4;
+}
+
+.about-item {
+    background-color: #fff;
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1); /*first: horizontal shadow, second: vertical shadow, third: blur distance, fourth: color rgb*/
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.about-item i {
+    font-size: 42px;
+    margin: 0;
+}
+
+.about-item h3 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.about-item hr{
+    width: 45px;
+    height: 3px;
+    background-color: #f4c613;
+    margin: 0 auto;
+    border: none;
+}
+
+.about-item p {
+    margin-top: 2px;  
+}
+
+.about-item:hover {
+    transform: translateY(-30px);
+}
+
+/* Hover State */
+.about-item:hover {
+    background-color: #f4c613;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+
+.about-item:hover hr{
+    background-color: #ffff;
+}
+
+/* Smooth transition */
+
+.about-item,
+.about-item i,
+.about-item hr {
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+}
+
+
+.owl-carousel {
+    display: inline-flex;
+    text-align: center;
+}
+
+.owl-carousel #team-member{
+    padding: 10px;
+}
+
